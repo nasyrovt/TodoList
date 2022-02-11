@@ -47,6 +47,7 @@ export class TodolistService {
     return this;
   }
 
+
   update(data: Partial<TodoItem>, ...items: readonly TodoItem[]): this {
     if(data.label !== "") {
       const L = this.subj.value;
