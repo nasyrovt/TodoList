@@ -1,3 +1,4 @@
+import { TodoListComponent } from './todo-list/todo-list.component';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
@@ -22,6 +23,7 @@ export class TodolistService {
   readonly observable = this.subj.asObservable();
 
   constructor() {
+
   }
 
   create(...labels: readonly string[]): this {
